@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stely.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>prodectssale</title>
+</head>
+<body>
+    <div class="continer">
+        <div class="navbar">
+            <div class="logo">
+                 <img src="images/logo.png" width="125"  alt="Pazar">
+             </div>
+             <nav class="nav">
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prodect.html">Prodect</a></li>
+                    <li><a href="prodectsale.html">Pro-select</a></li>
+                    <li><a href="#fotter">Contect</a></li>
+                    <li><a href="login.html">Acount</a></li>
+                    </ul>
+             </nav>
+            <img src="images/cart.png" width="30px"  height="30px" alt="">
+            <img src="images/menu.png " class="menu-icone" onclick="menutoggle()">
+            </div> 
+     </div>
+     <div class="account-page">
+         <div class="container">
+             <div class="row">
+                 <div class="col-2">
+                     <img src="images/image1.png" width="100%">
+                 </div>
+                 <div class="col-2">
+                     <div class="from-container">
+                         <div class="from-btn">
+                             <span onclick=" login()">Login</span>
+                             <span onclick="register()">Register</span>
+                             <hr id="int">
+                         </div>
+                         <form action="" id="login">
+                             <input type="text" name="" id="" placeholder="User Name">
+                             <input type="email" name="" id="" placeholder="Password">
+                             <button type="submit" class="btn">LOGiN  </button>
+                             <a href="">Forget Password</a>
+                         </form>
+                         <form action="" id="Register">
+                            <input type="text" name="" id="" placeholder="User Name">
+                            <input type="email" name="" id="" placeholder="Enter your email">
+                            <input type="password" name="" id="" placeholder="Password">
+                            <button type="submit" class="btn">LOGiN  </button>
+                            
+                        </form>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+     </div>
+
+    
+<!-------------fotter-->
+<div class="fotter" id="fotter">
+    <div class="container">
+        <div class="row">
+           <div class="fotter-col-1">
+               <h3 style="color: #ff523b;">Download Our App</h3>
+               <p>Download App For Andiroid and ios mobile Phone.</p>
+               <div class="app-logo">
+                   <img src="images/app-store.png" alt="">
+                   <img src="images/play-store.png" alt="">
+               </div>
+           </div>
+           <div class="fotter-col-2">
+               <img src="images/logo-white.png" alt="">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, animi dicta. Fuga doloribus voluptatem alias excepturi, facere, adipisci impedit vero autem, laudantium architecto exercitationem? Expedita officiis beatae possimus illum totam.</p>
+           </div>
+           <div class="fotter-col-3">
+            <h3>Uself Links</h3>
+            <li>Coupons</li>
+            <li>Blog Pols </li>
+            <li>Return Policy </li>
+            <li>Join Affiliate</li>
+            </div>
+            <div class="fotter-col-3">
+                <h3>follow us</h3>
+                <li>Facebook</li>
+                <li>Instgram </li>
+                <li>Twitter </li>
+                <li>Link_end</li>
+            </div>
+        </div>
+        <hr>
+        <p class="itsme">Copyright 2021 _ Coder_HASSAN</p>
+    </div>
+</div>
+<!-------------j.s for menutoggel-->
+<script>
+    var  MenuItems = document.getElementById ("MenuItems") ;
+MenuItems.style.maxHeight= "0px";
+function menutoggle(){
+if(MenuItems.style.maxHeight === "0px")
+{
+        MenuItems.style.maxHeight= "200px";
+}else{
+    MenuItems.style.maxHeight= "0px";
+}
+}
+</script>
+<script>
+    var Login = document.getElementById("login");
+    var Register =document.getElementById("Register");
+
+    var int =document.getElementById("int");
+
+    function register(){
+        Register.style.transform="translatex(0px)";
+        Login.style.transform="translatex(0px)";
+        int.style.transform="translatex(150px)";
+
+    }
+    function login(){
+        Register.style.transform="translatex(300px)";
+        Login.style.transform="translatex(300px)";
+        int.style.transform="translatex(35px)";
+
+    }
+</script>
+</body>
+</html>
